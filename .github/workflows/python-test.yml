@@ -15,4 +15,5 @@ jobs:
 
       - name: Print Hello World
         run: |
-          python hello-world.py
+          ls
+          python ./hello-world.py
