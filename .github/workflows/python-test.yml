@@ -9,7 +9,7 @@ jobs:
 
     steps: 
       - uses: actions/checkout@v2
-      
+
       - name: Setup Python
         uses: actions/setup-python@v1
         with:
@@ -17,5 +17,9 @@ jobs:
 
       - name: Print Hello World
         run: |
-          ls
           python ./hello-world.py
+
+      - name: Use secret variable
+        run: echo "secret value:" $SECRET_VARIABLE
+        env:
+          SECRET_VARIABLE: ${{ secrets.SECRET_VARIABLE }}
