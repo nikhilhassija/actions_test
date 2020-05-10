@@ -5,12 +5,12 @@ jobs:
   build: 
     name: Python Test
 
-      steps: 
-        - name: Setup Python
-          user: actions/setup-python@v1
-          with:
-            python-version: 3.7
+    steps: 
+      - name: Setup Python
+        user: actions/setup-python@v1
+        with:
+          python-version: 3.7
 
-        - name: Print Hello World
-          run: |
-            python -c "print(\"Hello world\")"
+      - name: Print Hello World
+        run: |
+          python -c "print(\"Hello world\")"
