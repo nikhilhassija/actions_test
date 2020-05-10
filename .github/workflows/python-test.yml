@@ -5,6 +5,8 @@ jobs:
   build: 
     name: Python Test
 
+    runs-on: ubuntu-latest
+
     steps: 
       - name: Setup Python
         uses: actions/setup-python@v1
